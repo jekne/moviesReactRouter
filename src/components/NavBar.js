@@ -24,6 +24,7 @@ export default function NavBar() {
       >
         DISCOVER
       </NavLink>
+      <NavLink to="/discover"></NavLink>
     </div>
   );
 }
