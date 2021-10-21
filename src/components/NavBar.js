@@ -1,11 +1,29 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export default function NavBar() {
   return (
     <div>
-      <Link to="/"> Home</Link> <Link to="/about"> about</Link>
-      <Link to="/discover">discover</Link>
+      <NavLink
+        activeStyle={{ backgroundColor: "red", fontWeight: "bold" }}
+        to="/"
+      >
+        {" "}
+        HOME
+      </NavLink>
+      <NavLink
+        activeStyle={{ backgroundColor: "yellow", fontWeight: "bold" }}
+        to="/about"
+      >
+        {" "}
+        ABOUT
+      </NavLink>
+      <NavLink
+        activeStyle={{ backgroundColor: "green", fontWeight: "bold" }}
+        to="/discover"
+      >
+        DISCOVER
+      </NavLink>
     </div>
   );
 }

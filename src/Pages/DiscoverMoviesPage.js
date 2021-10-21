@@ -1,3 +1,3 @@
 export default function DiscoveMoviesPages() {
-  return <div> Discover Movies Page</div>;
+  return <div> Now You Are At Discover Movies Page</div>;
 }
